@@ -4,10 +4,11 @@ import React from 'react';
 import './home.scss';
 
 // Routing
-import { BrowserRouter, Switch, Route, NavLink } from 'react-router-dom';
+import { BrowserRouter, Switch, Route, NavLink, Link } from 'react-router-dom';
 
 // Routed Components
 import Dashboard from '../dashboard';
+import RameeloLanding from '../rameelo/landing';
 
 export default function Home() {
   return (
@@ -28,6 +29,10 @@ export default function Home() {
         <AllContacts />
       </Route>{' '}
       */}
+
+        <Route path="/rameelo">
+          <RameeloLanding />
+        </Route>
 
         {/* If none of the previous routes render anything,
             this route acts as a fallback.
@@ -78,8 +83,22 @@ class ComponentSelection extends React.Component {
         </div>
 
         <div class="pages">
-          <div class="card">
-            <div class="card-header">Rameelo</div>
+          <div class="card rameelo-card">
+            <div class="custom-card-content">
+              <span class="flex-column flex-align-center justify">
+                <i class="fab fa-atlassian"></i>
+                <span class="main-text">Rameelo</span>
+                {/* <span class="secondary-text">
+                  Welcome to the online platform for everything garba/raas.
+                </span> */}
+              </span>
+
+              <span>
+                <Link to="/rameelo">
+                  <button>View</button>
+                </Link>
+              </span>
+            </div>
           </div>
           <div class="card"></div>
         </div>

@@ -1,0 +1,163 @@
+@import '../../../styles/index';
+
+.wrapper {
+  max-width: 1920px !important;
+}
+
+.top-section {
+  background-color: blue;
+  height: 1078px;
+  max-height: 1078px;
+  @extend %flex;
+
+  .row {
+    height: 100%;
+  }
+
+  .graphic-side {
+    background: linear-gradient(0deg, #ff1d465d, #ff1d467e),
+      url('../../../images/rameelo/rameelo_cover_photo.png');
+    background-position: center;
+    padding: 20px;
+
+    @extend %flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .logo {
+      color: $white;
+      margin: 20px 20px;
+      font-size: 30px;
+    }
+    .motto {
+      font-size: 140px;
+      color: $white;
+    }
+  }
+
+  .info-side {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+
+    .nav {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-end;
+      margin-top: 10px;
+
+      span {
+        color: $secondary-text;
+        margin: 20px 40px;
+        font-size: 20px;
+      }
+    }
+
+    .welcome {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+      margin: 30px;
+      padding: 15px;
+      border-right: 1px solid red;
+      position: relative;
+
+      .title {
+        font-size: 70px;
+
+        .red-text {
+          color: red;
+        }
+      }
+
+      .subtitle {
+        color: $secondary-text;
+        @extend %font-inter;
+      }
+
+      .learn-more {
+        margin-top: 20px;
+        color: red;
+        font-size: 14px;
+        text-decoration: underline;
+        @extend %font-inter;
+        font-weight: 600;
+      }
+    }
+
+    .scroll-widget {
+      margin: 0 16px 10px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      color: red;
+
+      .scroll-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        font {
+          font-size: 12px;
+        }
+
+        i {
+          font-size: 30px;
+        }
+      }
+    }
+  }
+}
+
+.quadrants-section {
+  background-color: red;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-wrap: wrap;
+
+  padding: 60px 140px;
+
+  .quadrant {
+    height: 250px;
+    flex: 1;
+    border-right: 1px solid white;
+    margin: 0px;
+    padding: 20px 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .quadrant-header {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      .title {
+        color: $white;
+        font-size: 38px;
+      }
+
+      .subtitle {
+        @extend %font-inter;
+        color: $white;
+        font-size: 13px;
+        margin-top: 5px;
+      }
+    }
+
+    .quadrant-footer {
+      color: gold;
+      font-size: 14px;
+      text-decoration: underline;
+      @extend %font-inter;
+    }
+  }
+
+  :last-child {
+    border: none !important;
+  }
+}

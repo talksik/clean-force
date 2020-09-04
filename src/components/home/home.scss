@@ -3,6 +3,7 @@
 .nav {
   @extend %flex;
   flex-direction: row;
+  margin-top: 10px;
 
   ul {
     @extend %flex;
@@ -37,6 +38,29 @@ div .pages {
 
   .card {
     height: 200px;
-    width: 200px;
+    width: 300px;
+    padding: 30px;
+  }
+
+  .custom-card-content {
+    @extend %flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+
+    .main-text {
+      font-size: 30px;
+    }
+  }
+
+  .rameelo-card {
+    background-color: #ffe2e5;
+    color: red;
+
+    i {
+      color: red;
+      font-size: 3em;
+    }
   }
 }
