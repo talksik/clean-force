@@ -46,9 +46,43 @@ export default function Home() {
 class ComponentSelection extends React.Component {
   render() {
     return (
-      <div>
-        <h2>alright we are in the component selection home page</h2>
-        <NavLink to="/dashboard">dashboard</NavLink>
+      <div class="wrapper">
+        <div class="nav">
+          <ul>
+            <li>
+              <NavLink activeClassName="active" to="/">
+                Home
+              </NavLink>
+            </li>
+            <li>
+              <NavLink activeClassName="active" to="/dashboard">
+                Dashboard
+              </NavLink>
+            </li>
+            <li>
+              <NavLink activeClassName="active" to="/start">
+                Get Started
+              </NavLink>
+            </li>
+            <li>
+              <NavLink activeClassName="active" to="/docs">
+                Docs
+              </NavLink>
+            </li>
+            <li>
+              <NavLink activeClassName="active" to="/pricing">
+                Pricing
+              </NavLink>
+            </li>
+          </ul>
+        </div>
+
+        <div class="pages">
+          <div class="card">
+            <div class="card-header">Rameelo</div>
+          </div>
+          <div class="card"></div>
+        </div>
       </div>
     );
   }

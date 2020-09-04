@@ -1,0 +1,21 @@
+// Common styles for all components
+
+%flex {
+  display: flex !important;
+}
+
+.wrapper {
+  max-width: 1140px;
+  margin: 20px auto;
+}
+
+.card {
+  background-color: white;
+  border-radius: 25px;
+  margin: 10px;
+
+  .card-header {
+    @extend %flex;
+    padding: 10px;
+  }
+}

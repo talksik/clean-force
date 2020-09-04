@@ -1,1 +1,42 @@
 @import '../../styles/index';
+
+.nav {
+  @extend %flex;
+  flex-direction: row;
+
+  ul {
+    @extend %flex;
+    padding-inline-start: 0 !important;
+    flex-direction: row;
+    align-items: stretch;
+    list-style: none;
+  }
+
+  li {
+    margin-right: 30px;
+  }
+
+  a {
+    text-decoration: none !important;
+    color: $secondary-text;
+  }
+
+  .active {
+    padding: 7px 10px;
+    background-color: $primary-color;
+    border-radius: 100px;
+    color: white;
+  }
+}
+
+div .pages {
+  @extend %flex;
+
+  margin: 20px;
+  flex-direction: row;
+
+  .card {
+    height: 200px;
+    width: 200px;
+  }
+}
