@@ -1,1 +1,8 @@
-$primary-color: #333;
+$primary-background: #fbf6f0;
+$primary-text: #3f4254;
+$secondary-text: #b5b5c3;
+
+body {
+  color: $primary-text;
+  background-color: $primary-background;
+}
