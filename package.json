@@ -30,5 +30,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "guppy": {
+    "id": "d6332090-eece-11ea-ace7-835155373f97",
+    "name": "Clean Force",
+    "type": "create-react-app",
+    "icon": "./static/media/icon_wateryorange.0a11182b.jpg",
+    "color": "#c41d00",
+    "createdAt": 1599238271258
   }
 }
