@@ -48,57 +48,68 @@ export default class Landing extends React.Component {
         </div>
 
         <div className="quadrants-section">
-          <div class="quadrant">
-            <span class="quadrant-header">
-              <span class="title">Event Hosts</span>
-              <span class="subtitle">
-                For organizations and individuals who are hosting their own
-                Navrati events, we would like to welcome you to get your event
-                listed on our website, allow attendees to purchase tickets on
-                the site, and advertise your event!
-              </span>
-            </span>
+          <div class="container-fluid">
+            <div class="row">
+              <div className="col">
+                <div class="quadrant">
+                  <span class="quadrant-header">
+                    <span class="title">Event Hosts</span>
+                    <span class="subtitle">
+                      For organizations and individuals who are hosting their
+                      own Navrati events, we would like to welcome you to get
+                      your event listed on our website, allow attendees to
+                      purchase tickets on the site, and advertise your event!
+                    </span>
+                  </span>
 
-            <span class="quadrant-footer">Sign Up</span>
-          </div>
-          <div class="quadrant">
-            <span class="quadrant-header">
-              <span class="title">Event Hosts</span>
-              <span class="subtitle">
-                For organizations and individuals who are hosting their own
-                Navrati events, we would like to welcome you to get your event
-                listed on our website, allow attendees to purchase tickets on
-                the site, and advertise your event!
-              </span>
-            </span>
+                  <span class="quadrant-footer">Sign up</span>
+                </div>
+              </div>
+              <div className="col">
+                <div class="quadrant">
+                  <span class="quadrant-header">
+                    <span class="title">Event Attendees</span>
+                    <span class="subtitle">
+                      For attendees, you will be able to browse events, buy
+                      tickets, and view videos of events! Sit tight until we
+                      roll these features out!
+                    </span>
+                  </span>
 
-            <span class="quadrant-footer">Sign Up</span>
-          </div>
-          <div class="quadrant">
-            <span class="quadrant-header">
-              <span class="title">Event Hosts</span>
-              <span class="subtitle">
-                For organizations and individuals who are hosting their own
-                Navrati events, we would like to welcome you to get your event
-                listed on our website, allow attendees to purchase tickets on
-                the site, and advertise your event!
-              </span>
-            </span>
+                  <span class="quadrant-footer">Create Account</span>
+                </div>
+              </div>
+              <div className="col">
+                <div class="quadrant">
+                  <span class="quadrant-header">
+                    <span class="title">Collegiate Teams</span>
+                    <span class="subtitle">
+                      For collegiate teams, we welcome you to join the platform
+                      to feature your team, share team details, and gain a
+                      centralized place for recognition beside other teams in
+                      the circuit!
+                    </span>
+                  </span>
 
-            <span class="quadrant-footer">Sign Up</span>
-          </div>
-          <div class="quadrant">
-            <span class="quadrant-header">
-              <span class="title">Event Hosts</span>
-              <span class="subtitle">
-                For organizations and individuals who are hosting their own
-                Navrati events, we would like to welcome you to get your event
-                listed on our website, allow attendees to purchase tickets on
-                the site, and advertise your event!
-              </span>
-            </span>
+                  <span class="quadrant-footer">Sign Up Team</span>
+                </div>
+              </div>
+              <div className="col">
+                <div class="quadrant">
+                  <span class="quadrant-header">
+                    <span class="title">Collegiate competitions</span>
+                    <span class="subtitle">
+                      For organizations and individuals who are hosting their
+                      own Navrati events, we would like to welcome you to get
+                      your event listed on our website, allow attendees to
+                      purchase tickets on the site, and advertise your event!
+                    </span>
+                  </span>
 
-            <span class="quadrant-footer">Sign Up</span>
+                  <span class="quadrant-footer">Sign Up Event</span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>

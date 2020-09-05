@@ -6,9 +6,8 @@
 
 .top-section {
   background-color: blue;
-  height: 1078px;
-  max-height: 1078px;
   @extend %flex;
+  min-height: 1078px;
 
   .row {
     height: 100%;
@@ -29,9 +28,15 @@
       margin: 20px 20px;
       font-size: 30px;
     }
+
     .motto {
       font-size: 140px;
       color: $white;
+    }
+    @media only screen and (max-width: 768px) {
+      .motto {
+        font-size: 90px;
+      }
     }
   }
 
@@ -51,6 +56,10 @@
         margin: 20px 40px;
         font-size: 20px;
       }
+
+      @media only screen and (max-width: 992px) {
+        display: none !important;
+      }
     }
 
     .welcome {
@@ -59,16 +68,25 @@
       flex-direction: column;
       align-items: flex-start;
       justify-content: center;
-      margin: 30px;
-      padding: 15px;
-      border-right: 1px solid red;
+
+      border-right: 1px solid $red;
       position: relative;
+
+      @media only screen and (min-width: 992px) {
+        padding: 4rem;
+        margin: 30px;
+      }
+
+      @media only screen and (max-width: 992px) {
+        border: none !important;
+        margin: 20px;
+      }
 
       .title {
         font-size: 70px;
 
         .red-text {
-          color: red;
+          color: $red;
         }
       }
 
@@ -79,7 +97,7 @@
 
       .learn-more {
         margin-top: 20px;
-        color: red;
+        color: $red;
         font-size: 14px;
         text-decoration: underline;
         @extend %font-inter;
@@ -92,7 +110,7 @@
       display: flex;
       flex-direction: column;
       align-items: flex-end;
-      color: red;
+      color: $red;
 
       .scroll-content {
         display: flex;
@@ -112,23 +130,32 @@
 }
 
 .quadrants-section {
-  background-color: red;
+  background-color: $red;
+  margin: 0 !important;
 
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: center;
-  flex-wrap: wrap;
+  @media only screen and (min-width: 992px) {
+    padding: 4em 6em;
+  }
 
-  padding: 60px 140px;
+  .row {
+    .col {
+      min-height: 250px;
+    }
+    @media only screen and (min-width: 992px) {
+      .col {
+        border-right: 1px solid white !important;
+      }
+
+      :last-child {
+        border: none !important;
+      }
+    }
+  }
 
   .quadrant {
-    height: 250px;
-    flex: 1;
-    border-right: 1px solid white;
-    margin: 0px;
-    padding: 20px 60px;
+    padding: 2em;
     display: flex;
+    height: 100%;
     flex-direction: column;
     justify-content: space-between;
 
@@ -136,6 +163,7 @@
       display: flex;
       flex-direction: column;
       align-items: flex-start;
+
       .title {
         color: $white;
         font-size: 38px;
@@ -150,14 +178,10 @@
     }
 
     .quadrant-footer {
-      color: gold;
+      color: $gold;
       font-size: 14px;
       text-decoration: underline;
       @extend %font-inter;
     }
-  }
-
-  :last-child {
-    border: none !important;
   }
 }
