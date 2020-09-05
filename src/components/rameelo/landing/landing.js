@@ -6,7 +6,7 @@ import './landing.scss';
 export default class Landing extends React.Component {
   render() {
     return (
-      <div className="wrapper">
+      <div className="rameelo-wrapper">
         <div className="top-section">
           <div className="container-fluid">
             <div className="row">
