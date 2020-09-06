@@ -3,8 +3,45 @@ import React from 'react';
 // Styles
 import './landing.scss';
 
+// Slick
+import Slider from 'react-slick';
+
 export default class Landing extends React.Component {
   render() {
+    var sliderSettings = {
+      dots: true,
+      infinite: true,
+      speed: 300,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      centerMode: true,
+      responsive: [
+        {
+          breakpoint: 1024,
+          settings: {
+            slidesToShow: 3,
+            slidesToScroll: 3,
+            infinite: true,
+            dots: true,
+          },
+        },
+        {
+          breakpoint: 600,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+          },
+        },
+        {
+          breakpoint: 480,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
+        },
+      ],
+    };
+
     return (
       <div className="rameelo-wrapper">
         <div className="top-section">
@@ -109,6 +146,35 @@ export default class Landing extends React.Component {
                   <span class="quadrant-footer">Sign Up Event</span>
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="events-section">
+          <div class="events-inner-container">
+            <span>Upcoming Events</span>
+            <div class="carousel-container">
+              <Slider {...sliderSettings}>
+                <div className="event-card">
+                  <span className="event-card-graphic"></span>
+                  <span className="event-card-info"></span>
+                </div>
+                <div className="event-card">
+                  <h3>2</h3>
+                </div>
+                <div className="event-card">
+                  <h3>3</h3>
+                </div>
+                <div className="event-card">
+                  <h3>4</h3>
+                </div>
+                <div className="event-card">
+                  <h3>5</h3>
+                </div>
+                <div className="event-card">
+                  <h3>6</h3>
+                </div>
+              </Slider>
             </div>
           </div>
         </div>

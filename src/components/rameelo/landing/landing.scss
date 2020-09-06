@@ -135,7 +135,7 @@
   margin: 0 !important;
 
   @media only screen and (min-width: 992px) {
-    padding: 4em 6em;
+    padding: 3em 6em;
   }
 
   .row {
@@ -183,6 +183,62 @@
       font-size: 14px;
       text-decoration: underline;
       @extend %font-inter;
+    }
+  }
+}
+
+.events-section {
+  background: #f4f4f4 0% 0% no-repeat padding-box;
+  padding: 3em 4em;
+
+  .events-inner-container {
+    span {
+      font-size: 30px;
+    }
+
+    .carousel-container {
+      margin: 1em 0;
+
+      .slick-arrow::before {
+        color: black !important;
+      }
+
+      /* the slides */
+      .slick-slide {
+        padding: 0 20px;
+      }
+
+      ul {
+        background: #f4f4f4 0% 0% no-repeat padding-box !important;
+      }
+
+      .event-card {
+        width: 367px;
+        height: 134px;
+        /* UI Properties */
+        background: #ffffff 0% 0% no-repeat padding-box;
+        box-shadow: 5px 5px 30px #0000001c;
+        opacity: 1;
+
+        padding: 1rem;
+
+        display: flex;
+        flex-direction: row;
+
+        .event-card-graphic {
+          display: flex;
+          flex: 1;
+          flex-direction: column;
+          justify-content: flex-start;
+        }
+
+        .event-card-info {
+          display: flex;
+          flex: 1;
+          flex-direction: column;
+          justify-content: space-between;
+        }
+      }
     }
   }
 }
