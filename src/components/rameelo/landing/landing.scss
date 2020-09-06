@@ -189,7 +189,12 @@
 
 .events-section {
   background: #f4f4f4 0% 0% no-repeat padding-box;
-  padding: 3em 4em;
+
+  padding: 2em 2em;
+
+  @media only screen and (min-width: 992px) {
+    padding: 3em 4em;
+  }
 
   .events-inner-container {
     span {
@@ -267,7 +272,7 @@
 
             color: $secondary-text;
             @extend %font-inter;
-            font-size: 0.4em;
+            font-size: 12px;
           }
         }
       }
