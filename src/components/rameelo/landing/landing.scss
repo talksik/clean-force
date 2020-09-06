@@ -144,7 +144,7 @@
     }
     @media only screen and (min-width: 992px) {
       .col {
-        border-right: 1px solid white !important;
+        border-right: 1px solid #ffcb5a !important;
       }
 
       :last-child {
@@ -206,8 +206,11 @@
         padding: 2em 0 !important;
       }
 
-      .slick-arrow::before {
-        color: black !important;
+      button.slick-arrow::before {
+        color: $red !important;
+        // height: 40px !important;
+        // width: 40px !important;
+        box-shadow: 5px 5px 30px #0000001c;
       }
 
       /* the slides */
@@ -260,9 +263,7 @@
           justify-content: space-between;
 
           .event-name {
-            font-size: 0.5em;
-            @extend %font-inter;
-            font-weight: 500;
+            font: normal normal 600 18px/20px Inter;
           }
 
           .event-location {
@@ -274,6 +275,252 @@
             @extend %font-inter;
             font-size: 12px;
           }
+        }
+      }
+    }
+  }
+}
+
+.host-section {
+  padding: 1em;
+  background-color: $white;
+
+  @media only screen and (min-width: 992px) {
+    padding: 4em;
+  }
+
+  .overlapping-title {
+    font: normal normal bold 176px/211px Bebas Neue;
+    text-align: left;
+    color: $red;
+
+    margin: 0;
+    padding: 0;
+
+    z-index: 1;
+    opacity: 0.45;
+  }
+
+  .main-card {
+    top: -4rem;
+    z-index: 100;
+    opacity: 1;
+
+    background: white 0% 0% no-repeat padding-box;
+    box-shadow: 5px 10px 30px #00000038;
+
+    @media screen and (min-width: 1366px) {
+      background: transparent url('../../../images/rameelo/host_bg_2x.png') 100%
+        0% no-repeat padding-box;
+      background-size: contain;
+
+      margin-left: 2rem;
+      margin-right: 2rem;
+    }
+
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .info-container {
+      max-width: 853px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+
+      padding: 1rem 2rem;
+
+      @media screen and (min-width: 992px) {
+        padding: 2em 5em;
+      }
+
+      .title {
+        text-align: left;
+        font: normal normal bold 78px/152px Bebas Neue;
+        letter-spacing: 0px;
+        color: #000000;
+        opacity: 1;
+      }
+
+      .description {
+        text-align: left;
+        font: normal normal normal 18px/27px Inter;
+        letter-spacing: 0px;
+        color: #6f6f6f;
+        opacity: 1;
+
+        margin-bottom: 4rem;
+      }
+
+      .actions {
+        margin-bottom: 2em;
+
+        button {
+          border-radius: none !important;
+          margin: 0.5rem;
+          cursor: pointer;
+        }
+
+        .main-action {
+          width: 193px;
+          height: 62px;
+          /* UI Properties */
+          background: #ff1d46 0% 0% no-repeat padding-box;
+          box-shadow: 5px 6px 30px #00000040;
+          opacity: 1;
+          border: none;
+
+          text-align: center;
+          font: normal normal 600 15px/19px Inter;
+          letter-spacing: 0.3px;
+          color: #ffffff;
+          opacity: 1;
+        }
+
+        .secondary-action {
+          width: 193px;
+          height: 62px;
+          /* UI Properties */
+          border: 1px solid $red;
+          opacity: 1;
+
+          text-align: center;
+          font: normal normal 600 15px/19px Inter;
+          letter-spacing: 0.3px;
+          color: $red;
+          background-color: white;
+          opacity: 1;
+        }
+      }
+    }
+  }
+}
+
+.compete-section {
+  padding: 1em;
+  background-color: $white;
+
+  @media only screen and (min-width: 992px) {
+    padding: 4em;
+  }
+
+  .overlapping-title {
+    font: normal normal bold 176px/211px Bebas Neue;
+    text-align: left;
+    color: $gold;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+
+    margin: 0;
+    padding: 0;
+
+    z-index: 1;
+    opacity: 0.45;
+
+    right: 0;
+  }
+
+  .main-card {
+    top: -4rem;
+    z-index: 100;
+    opacity: 1;
+
+    background: white 0% 0% no-repeat padding-box;
+    box-shadow: 5px 10px 30px #00000038;
+
+    @media screen and (min-width: 1366px) {
+      background: transparent url('../../../images/rameelo/host_bg_2x.png') 0%
+        0% no-repeat padding-box;
+      background-size: contain;
+
+      margin-left: 2rem;
+      margin-right: 2rem;
+
+      ::before {
+        transform: rotate(20deg);
+      }
+    }
+
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+
+    .info-container {
+      max-width: 853px;
+
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+
+      padding: 1rem 2rem;
+
+      @media screen and (min-width: 992px) {
+        padding: 2em 5em;
+      }
+
+      .title {
+        text-align: left;
+        font: normal normal bold 78px/152px Bebas Neue;
+        letter-spacing: 0px;
+        color: #000000;
+        opacity: 1;
+      }
+
+      .description {
+        text-align: left;
+        font: normal normal normal 18px/27px Inter;
+        letter-spacing: 0px;
+        color: #6f6f6f;
+        opacity: 1;
+
+        margin-bottom: 4rem;
+      }
+
+      .actions {
+        margin-bottom: 2em;
+
+        button {
+          border-radius: none !important;
+          margin: 0.5rem;
+          cursor: pointer;
+        }
+
+        .main-action {
+          width: 193px;
+          height: 62px;
+          /* UI Properties */
+          background: $gold 0% 0% no-repeat padding-box;
+          box-shadow: 5px 6px 30px #00000040;
+          opacity: 1;
+          border: none;
+
+          text-align: center;
+          font: normal normal 600 15px/19px Inter;
+          letter-spacing: 0.3px;
+          color: #ffffff;
+          opacity: 1;
+        }
+
+        .secondary-action {
+          width: 193px;
+          height: 62px;
+          /* UI Properties */
+          border: 1px solid $gold;
+          opacity: 1;
+
+          text-align: center;
+          font: normal normal 600 15px/19px Inter;
+          letter-spacing: 0.3px;
+          color: $gold;
+          background-color: white;
+          opacity: 1;
         }
       }
     }

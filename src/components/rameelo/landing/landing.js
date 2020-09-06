@@ -238,6 +238,49 @@ export default class Landing extends React.Component {
             </div>
           </div>
         </div>
+
+        <div className="host-section">
+          <div className="overlapping-title">HOST</div>
+          <div className="main-card">
+            <div className="info-container">
+              <span className="title">Navratri Events</span>
+              <span className="description">
+                On the next phase of the platform development, we will be
+                building a gateway for Raas/Garba event hosts to promote their
+                events, sell tickets, and manage event logistics! Event
+                attendees seeking to attend Navratri events will be able to
+                browse events, purchase tickets, and view promotion videos from
+                those events!
+              </span>
+              <span className="actions">
+                <button className="main-action">SIGN UP EVENT</button>
+                <button className="secondary-action">CREATE ACCOUNT</button>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div className="compete-section">
+          <div className="overlapping-title">Compete</div>
+          <div className="main-card">
+            <div className="info-container">
+              <span className="title">Collegiate</span>
+              <span className="description">
+                For the first platform steps, we will be building a gateway for
+                the collegiate Raas/Garba teams and competitions. Teams will be
+                able to list their roster, share information about themselves,
+                demonstrate achievements they have, exhibit their dance videos,
+                and more. Competitions will be empowered to promote thier
+                events, enable easy competition team lists, showcase their
+                boards, exhibit videos, and present winners!
+              </span>
+              <span className="actions">
+                <button className="main-action">SIGN UP TEAM</button>
+                <button className="secondary-action">CREATE ACCOUNT</button>
+              </span>
+            </div>
+          </div>
+        </div>
       </div>
     );
   }
