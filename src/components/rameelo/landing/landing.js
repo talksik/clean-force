@@ -9,7 +9,6 @@ import Slider from 'react-slick';
 export default class Landing extends React.Component {
   render() {
     var sliderSettings = {
-      dots: true,
       infinite: true,
       speed: 300,
       slidesToShow: 4,
@@ -156,23 +155,94 @@ export default class Landing extends React.Component {
             <div class="carousel-container">
               <Slider {...sliderSettings}>
                 <div className="event-card">
-                  <span className="event-card-graphic"></span>
-                  <span className="event-card-info"></span>
+                  <span className="event-card-graphic">
+                    <span className="date-graphic">
+                      <span>OCT</span>
+                      <span>19</span>
+                    </span>
+                  </span>
+                  <span className="event-card-info">
+                    <span className="event-name">
+                      Garba with Attitude Competition
+                    </span>
+
+                    <span className="event-location">
+                      <i className="fas fa-location-arrow"></i>
+                      United Center @ Chicag, IL
+                    </span>
+                  </span>
                 </div>
                 <div className="event-card">
-                  <h3>2</h3>
+                  <span className="event-card-graphic">
+                    <span className="date-graphic">
+                      <span>OCT</span>
+                      <span>19</span>
+                    </span>
+                  </span>
+                  <span className="event-card-info">
+                    <span className="event-name">
+                      Garba with Attitude Competition
+                    </span>
+
+                    <span className="event-location">
+                      <i className="fas fa-location-arrow"></i>
+                      United Center @ Chicag, IL
+                    </span>
+                  </span>
                 </div>
                 <div className="event-card">
-                  <h3>3</h3>
+                  <span className="event-card-graphic">
+                    <span className="date-graphic">
+                      <span>OCT</span>
+                      <span>19</span>
+                    </span>
+                  </span>
+                  <span className="event-card-info">
+                    <span className="event-name">
+                      Garba with Attitude Competition
+                    </span>
+
+                    <span className="event-location">
+                      <i className="fas fa-location-arrow"></i>
+                      United Center @ Chicag, IL
+                    </span>
+                  </span>
                 </div>
                 <div className="event-card">
-                  <h3>4</h3>
+                  <span className="event-card-graphic">
+                    <span className="date-graphic">
+                      <span>OCT</span>
+                      <span>19</span>
+                    </span>
+                  </span>
+                  <span className="event-card-info">
+                    <span className="event-name">
+                      Garba with Attitude Competition
+                    </span>
+
+                    <span className="event-location">
+                      <i className="fas fa-location-arrow"></i>
+                      United Center @ Chicag, IL
+                    </span>
+                  </span>
                 </div>
                 <div className="event-card">
-                  <h3>5</h3>
-                </div>
-                <div className="event-card">
-                  <h3>6</h3>
+                  <span className="event-card-graphic">
+                    <span className="date-graphic">
+                      <span>OCT</span>
+                      <span>19</span>
+                    </span>
+                  </span>
+                  <span className="event-card-info">
+                    <span className="event-name">
+                      Garba with Attitude Competition
+                    </span>
+
+                    <span className="event-location">
+                      <i className="fas fa-location-arrow"></i>
+                      United Center @ Chicag, IL
+                    </span>
+                  </span>
                 </div>
               </Slider>
             </div>
