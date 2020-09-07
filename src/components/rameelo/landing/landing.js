@@ -331,6 +331,13 @@ function LandingContent(props) {
                   url="https://www.youtube.com/watch?v=gOPEpsGJyCs"
                 />
               </span>
+
+              <span className="video-slide">
+                <ReactPlayer
+                  controls={true}
+                  url="https://www.youtube.com/watch?v=gOPEpsGJyCs"
+                />
+              </span>
             </Slider>
           </span>
         </div>

@@ -326,8 +326,8 @@ button.slick-arrow::before {
     padding: 1.5rem 0;
 
     .join-card {
-      width: 391px;
-      height: 246px;
+      min-width: 391px;
+      min-height: 246px;
       background-color: $red;
       display: flex;
       flex-direction: column;
@@ -374,6 +374,8 @@ button.slick-arrow::before {
           width: 320px !important;
           height: 220px !important;
         }
+
+        box-shadow: 5px 6px 10px #00000029;
       }
     }
   }
