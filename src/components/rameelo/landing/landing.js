@@ -6,6 +6,9 @@ import './landing.scss';
 // Slick
 import Slider from 'react-slick';
 
+// Video Player
+import ReactPlayer from 'react-player';
+
 // Loader component
 import Loader from '../../loader';
 
@@ -13,7 +16,7 @@ export default class Landing extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      isLoading: true,
+      isLoading: false,
     };
   }
 
@@ -36,10 +39,33 @@ export default class Landing extends React.Component {
 }
 
 function LandingContent(props) {
-  var sliderSettings = {
+  var eventSliderSettings = {
     infinite: true,
     speed: 300,
     slidesToShow: 4,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
+
+  var videoSliderSettings = {
+    infinite: true,
+    speed: 300,
+    slidesToShow: 3,
     slidesToScroll: 1,
     responsive: [
       {
@@ -169,9 +195,9 @@ function LandingContent(props) {
 
       <div className="events-section">
         <div class="events-inner-container">
-          <span>Upcoming Events</span>
+          <span className="section-title">Upcoming Events</span>
           <div class="carousel-container">
-            <Slider {...sliderSettings}>
+            <Slider {...eventSliderSettings}>
               <div className="event-card">
                 <span className="event-card-graphic">
                   <span className="date-graphic">
@@ -264,6 +290,49 @@ function LandingContent(props) {
               </div>
             </Slider>
           </div>
+        </div>
+      </div>
+
+      <div className="highlights-section">
+        <span className="section-title">Event Highlights</span>
+        <div className="main-video-container">
+          {/* Check out for further functionality of this package:
+          https://www.npmjs.com/package/react-player */}
+          <ReactPlayer
+            controls={true}
+            url="https://www.youtube.com/watch?v=gOPEpsGJyCs"
+          />
+        </div>
+        <div className="bottom-video-content">
+          <span className="join-card">
+            <span className="card-title">Join the Fun</span>
+            <span className="card-desc">
+              Interested in attending an event? Sign up now to purchase tickets!
+            </span>
+            <span className="card-action">Sign Up Now</span>
+          </span>
+          <span className="video-slider-container">
+            <Slider {...videoSliderSettings}>
+              <span className="video-slide">
+                <ReactPlayer
+                  controls={true}
+                  url="https://www.youtube.com/watch?v=gOPEpsGJyCs"
+                />
+              </span>
+              <span className="video-slide">
+                <ReactPlayer
+                  controls={true}
+                  url="https://www.youtube.com/watch?v=gOPEpsGJyCs"
+                />
+              </span>
+              <span className="video-slide">
+                <ReactPlayer
+                  controls={true}
+                  url="https://www.youtube.com/watch?v=gOPEpsGJyCs"
+                />
+              </span>
+            </Slider>
+          </span>
         </div>
       </div>
 

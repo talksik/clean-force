@@ -1,5 +1,23 @@
 @import '../../../styles/index';
 
+// Slick Slider Styles
+.slick-list {
+  padding: 1em 0 !important;
+}
+
+button.slick-arrow::before {
+  color: $red !important;
+  // height: 40px !important;
+  // width: 40px !important;
+  box-shadow: 5px 5px 30px #0000001c;
+}
+
+/* the slides */
+.slick-slide {
+  padding: 0 20px;
+}
+
+// content
 .rameelo-wrapper {
   max-width: 1920px !important;
   margin: 0 auto;
@@ -197,27 +215,12 @@
   }
 
   .events-inner-container {
-    span {
+    span.section-title {
       font-size: 30px;
     }
 
     .carousel-container {
-      .slick-list {
-        padding: 2em 0 !important;
-      }
-
-      button.slick-arrow::before {
-        color: $red !important;
-        // height: 40px !important;
-        // width: 40px !important;
-        box-shadow: 5px 5px 30px #0000001c;
-      }
-
-      /* the slides */
-      .slick-slide {
-        padding: 0 20px;
-      }
-
+      padding-top: 2rem;
       ul {
         background: #f4f4f4 0% 0% no-repeat padding-box !important;
       }
@@ -249,8 +252,9 @@
             align-items: center;
             height: 35px;
             width: 35px;
+
             span {
-              font-size: 0.5em;
+              font-size: 0.8em;
             }
           }
         }
@@ -275,6 +279,100 @@
             @extend %font-inter;
             font-size: 12px;
           }
+        }
+      }
+    }
+  }
+}
+
+.highlights-section {
+  padding: 2em;
+  background-color: $white;
+
+  @media only screen and (min-width: 992px) {
+    padding: 4em 7em;
+  }
+
+  .section-title {
+    text-align: left;
+    font: normal normal normal 38px/74px Bebas Neue;
+    letter-spacing: 0px;
+    color: #000000;
+  }
+
+  .main-video-container {
+    div {
+      width: auto !important;
+
+      @media only screen and (min-width: 320px) {
+        height: 200px !important;
+      }
+      @media only screen and (min-width: 481px) {
+        height: 400px !important;
+      }
+      @media only screen and (min-width: 769px) {
+        height: 600px !important;
+      }
+
+      @media only screen and (min-width: 1201px) {
+        height: 900px !important;
+      }
+    }
+  }
+
+  .bottom-video-content {
+    display: flex;
+    flex-direction: row;
+    padding: 1.5rem 0;
+
+    .join-card {
+      width: 391px;
+      height: 246px;
+      background-color: $red;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      padding: 2em;
+
+      box-shadow: 5px 6px 10px #0000005a;
+
+      .card-title {
+        text-align: left;
+        font: normal normal normal 38px/39px Bebas Neue;
+        letter-spacing: 0px;
+        color: #f4f4f4;
+        opacity: 1;
+        margin-bottom: 0.5em;
+      }
+
+      .card-desc {
+        text-align: left;
+        font: normal normal normal 18px/25px Inter;
+        letter-spacing: 0px;
+        color: #f4f4f4;
+        opacity: 1;
+      }
+
+      .card-action {
+        text-align: left;
+        font: normal normal 600 15px/19px Inter;
+        letter-spacing: 0.3px;
+        color: $gold;
+        opacity: 1;
+        justify-self: flex-end;
+        margin-top: 4em;
+        text-decoration: underline;
+      }
+    }
+
+    .video-slider-container {
+      padding: 0 1.5em;
+
+      .video-slide {
+        div {
+          width: 320px !important;
+          height: 220px !important;
         }
       }
     }
