@@ -326,7 +326,7 @@ button.slick-arrow::before {
     padding: 1.5rem 0;
 
     .join-card {
-      min-width: 391px;
+      width: 391px;
       min-height: 246px;
       background-color: $red;
       display: flex;
@@ -370,6 +370,11 @@ button.slick-arrow::before {
       padding: 0 1.5em;
 
       .video-slide {
+        background-image: url('../../../images/rameelo/rameelo_cover_photo.png');
+        background-position: center;
+        width: 320px !important;
+        height: 220px !important;
+
         div {
           width: 320px !important;
           height: 220px !important;

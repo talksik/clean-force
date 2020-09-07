@@ -313,31 +313,9 @@ function LandingContent(props) {
           </span>
           <span className="video-slider-container">
             <Slider {...videoSliderSettings}>
-              <span className="video-slide">
-                <ReactPlayer
-                  controls={true}
-                  url="https://www.youtube.com/watch?v=gOPEpsGJyCs"
-                />
-              </span>
-              <span className="video-slide">
-                <ReactPlayer
-                  controls={true}
-                  url="https://www.youtube.com/watch?v=gOPEpsGJyCs"
-                />
-              </span>
-              <span className="video-slide">
-                <ReactPlayer
-                  controls={true}
-                  url="https://www.youtube.com/watch?v=gOPEpsGJyCs"
-                />
-              </span>
-
-              <span className="video-slide">
-                <ReactPlayer
-                  controls={true}
-                  url="https://www.youtube.com/watch?v=gOPEpsGJyCs"
-                />
-              </span>
+              <span className="video-slide"></span>
+              <span className="video-slide"></span>
+              <span className="video-slide"></span>
             </Slider>
           </span>
         </div>
